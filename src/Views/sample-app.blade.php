@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+msmss
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -18,63 +18,63 @@
 </head>
 <body>
 <div id="app">
-    <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+    <nav classccncccccsksksksssssssssssssssssss ="navbar navbar-expand-md navbar-light bg-white shadow-sm">
         <div class="container">
             <a class="navbar-brand" href="{{ url('/') }}">
-                {{ config('app.name', 'Laravel') }}
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <!-- Left Side Of Navbar -->
-                <ul class="navbar-nav mr-auto">
-
-                </ul>
-
-                <!-- Right Side Of Navbar -->
-                <ul class="navbar-nav ml-auto">
-                    <!-- Authentication Links -->
-                    @guest
+                {{ config('app.name', 'Laravel')dckcd }}
+            </a>cddc
+            <button dcclass="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                <span dclass="navbar-toggler-icon"></span>
+            </button>cd
+d
+ c           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  dc              <!-- Left Side Of Navbar -->
+    dc            <ul class="navbar-nav mr-auto">
+dc
+  dc              </ul>
+dc
+  dc              <!-- Right Side Of Navbar -->
+    d            <ul class="navbar-nav ml-auto">
+     cd               <!-- Authentication Links -->
+       dc             @guest
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                        </li>
-                        @if (Route::has('register'))
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                            </li>
-                        @endif
-                    @else
-                        <li class="nav-item dropdown">
-                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                {{ Auth::user()->name }} <span class="caret"></span>
-                            </a>
-
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="{{ route('logout') }}"
-                                   onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                    {{ __('Logout') }}
-                                </a>
-
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                    @csrf
-                                </form>
-                            </div>
-                        </li>
-                    @endguest
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <main class="py-4">
-        @yield('auth_content')
-        @yield('content')
-    </main>
-</div>
-
+         dc                   <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+           dc             </li>
+             dc           @if (Route::has('register'))
+               dc             <li class="nav-item">
+                 dc               <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                   d         </li>
+                    dc    @endif
+                    @edclse
+                        dc<li class="nav-item dropdown">
+                          dc  <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            dc    {{ Auth::user()->name }} <span class="caret"></span>
+                            </dca>
+dc
+  dc                          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+    dc                            <a class="dropdown-item" href="{{ route('logout') }}"
+      dc                             onclick="event.preventDefault();
+        dc                                             document.getElementById('logout-form').submit();">
+          dcdc                          {{ __('Logout') }}
+              dc                  </a>
+dc
+  dc                              <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+    dc                                @csrf
+      dc                          </form>
+        cd                    </div>
+          dc              </li>
+            dc        @endguest
+              dc  </ul>
+            </didcv>
+        </div>dc
+    </nav>dc
+dc
+  dc  <main class="py-4">
+    dc    @yield('auth_content')
+      dc  @yield('content')
+    </madcin>
+</div>dc
+dc
 <!-- Scripts -->
 <script src="{{ asset('js/app.js') }}"></script>
 @yield('footer')
